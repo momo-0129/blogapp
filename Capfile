@@ -16,6 +16,10 @@ require 'capistrano/rbenv'
 # require "capistrano/scm/svn"
 # install_plugin Capistrano::SCM::Svn
 # or
+require 'capistrano/rails'
+require 'capistrano/passenger'
+require 'capistrano/rbenv'
+
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
@@ -42,4 +46,4 @@ install_plugin Capistrano::SCM::Git
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
 
 set :rbenv_type, :user
-set :rbenv_ruby, '3.2.0'
+set :rbenv_ruby, '3.2.1'

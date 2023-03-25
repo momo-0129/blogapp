@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:momo-0129/blogapp.git"
 
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
-# append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
 set :keep_releases, 5
 
